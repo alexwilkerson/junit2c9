@@ -12,7 +12,7 @@ echo "junit2c9 linking JUnit to Java classpath..."
 if [[ -f $JUNIT && -f $HAMCREST && -f $BASH_PROFILE ]]; then
     echo -e "\n# This section appended with junit2c9" >> $BASH_PROFILE 
     echo -e "export CLASSPATH=${JUNIT}:${HAMCREST}:." >> $BASH_PROFILE
-    echo -e "\n# JUnit alias\nalias javajunit=\"java org.junit.runner.JUnitCore \""
+    echo -e "\n# JUnit alias\nalias javajunit=\"java org.junit.runner.JUnitCore \"" >> $BASH_PROFILE
     source $BASH_PROFILE
 else
     echo "One of the required files does not exist. Exiting..."
