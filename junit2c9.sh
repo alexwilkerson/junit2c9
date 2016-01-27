@@ -18,5 +18,3 @@ else
     echo "One of the required files does not exist. Exiting..."
     exit 1
 fi
-
-exit 0
